@@ -1,0 +1,24 @@
+.film-cast {
+    height: 30rem;
+    max-width: 90%;
+
+    position: absolute;
+    margin-top: 2rem;
+    overflow: hidden;
+
+
+    .cast {
+        min-width: 70%;
+
+        display: grid;
+
+        grid-template-columns: repeat(11, 1fr);
+
+        gap: 1rem;
+
+        overflow-x: scroll;
+
+        height: 22rem;
+
+    }
+}

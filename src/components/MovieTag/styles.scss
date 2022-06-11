@@ -1,0 +1,42 @@
+.movie-tag {
+    width: 11rem;
+    height: 22rem; 
+    cursor: pointer;
+    transition: all .5s ease;
+    
+
+    .movie-poster {
+        width: 11rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        transition: all .5s ease;
+
+        &:hover {
+            opacity: .8;
+        }
+
+        
+    }
+
+    .movie-points {
+        position: relative;
+        top: -1rem;
+        left: 1rem;
+        background-color: #032541;
+        border-radius: 50%;
+    }
+
+    .movie-info {
+        margin-top : -.5rem;
+        padding : 0 .5rem;
+        height: 9rem;
+    }
+
+}
+
+.ant-progress .ant-progress-text {
+    color: white;
+    font-family: Source Sans Pro;
+    font-weight: bolder;
+    
+}

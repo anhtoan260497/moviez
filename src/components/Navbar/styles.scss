@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+@mixin flex($justify, $aligns: none) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $aligns;
+}
+
+.navbar-container {
+    width: 100%;
+    padding: 0 5%;
+    height: 4rem;
+
+    background-color: #032541;
+    color: white;
+    font-family: Source Sans Pro;
+    @include flex(space-between, center);
+
+    position: fixed;
+    z-index: 10;
+
+    .navbar-navigation {
+        width: 30rem;
+        height: 4rem;
+        @include flex(space-between, center);
+
+        .navbar-logo {
+            width: 7rem;
+        }
+
+        .navbar-menu {
+            width: 20rem;
+            @include flex(space-around);
+
+            .navbar-menu-options {
+                background-color: transparent;
+                border: none;
+                font-size: 1rem;
+                color: white;
+                font-family: Source Sans Pro;
+            }
+        }
+    }
+
+    .navbar-auth-search {
+        width: 20rem;
+        color: white;
+        font-family: Source Sans Pro;
+        @include flex(space-around, center);
+        font-size: 1rem;
+    }
+}
+
+.menu-items {
+    font-weight: normal;
+    font-family: Source Sans Pro;
+    border-radius: 1rem;
+}
+
+.search-input {
+    position: fixed !important; 
+    width: 100%;
+    top : 4rem;
+    height: 4rem;
+    z-index: 10;
+
+    display: flex;
+
+    .submit-btn {
+        position: absolute;
+        right: 2rem;
+        width: 5rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        background-color: transparent;
+        outline :none;
+        border:none;
+    }
+    .search {
+        padding : 0 5%;
+    }
+
+    
+}
