@@ -60,7 +60,7 @@ function FilmOverview() {
         const trailer = data.data.results.filter(
           (item) =>
             item.name.includes("Official Trailer") ||
-            item.name.includes("Trailer")
+            item.name.includes("Trailer") ||  item.name.includes('trailer')
         );
         setTrailerURL(trailer[0]?.key);
       }
