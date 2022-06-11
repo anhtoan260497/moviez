@@ -43,6 +43,7 @@ function TrailerHome(props) {
     });
   };
 
+
   useEffect(() => {
     if (!trailerType) return;
 

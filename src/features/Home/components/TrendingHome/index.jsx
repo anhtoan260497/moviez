@@ -35,6 +35,7 @@ function TrendingHome(props) {
     fetchTrendingData();
   }, [trendingType, API_Key]);
 
+
   const renderTrending = () => {
     if (!trendingData) return;
     return trendingData.map((item, idx) => {

@@ -14,7 +14,12 @@ MovieTag.propTypes = {
 };
 
 function MovieTag({ name, img, vote, id, type, border }) {
-
+  const handleScrollToTop = () => {
+    window.scrollTo({
+      top : 0,
+      behavior:"smooth"
+    })
+  }
 
 
   return (
@@ -26,6 +31,7 @@ function MovieTag({ name, img, vote, id, type, border }) {
           : null
       }
       to={`/${type}/${id}`}
+      onClick={handleScrollToTop}
     >
       <img
         className="movie-poster"
