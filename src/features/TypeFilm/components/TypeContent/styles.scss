@@ -1,0 +1,11 @@
+.type-content {
+    width: calc(100% - 20rem);
+    // border:1px solid red;
+
+    // padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap : 2rem;
+    
+}

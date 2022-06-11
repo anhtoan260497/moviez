@@ -1,0 +1,18 @@
+.cast-tag {
+    width: 9rem;
+    height: 19rem;
+    border-radius: .5rem ;
+    margin-left: .5rem;
+
+    box-shadow: -2px 2px 5px gray;
+
+    overflow: hidden;
+
+    .cast-img{
+        width: 9rem;
+    }
+
+    .cast-detail {
+        padding : .5rem;
+    }
+}
