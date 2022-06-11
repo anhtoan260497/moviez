@@ -107,7 +107,7 @@ function Navbar(props) {
         </div>
         <div className="navbar-auth-search">
             <a
-                href="https://github.com/anhtoan260497/moviedb"
+                href="https://github.com/anhtoan260497/moviez/tree/master"
                 target="_blank"
                 rel="noreferrer"
                 style={{
